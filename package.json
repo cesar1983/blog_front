@@ -5,11 +5,40 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export",
+    "lint": "eslint src --max-warnings=0"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "@zeit/next-css": "^1.0.1",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "html-react-parser": "^0.14.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "moment": "^2.29.1",
     "next": "10.0.2",
+    "next-fonts": "^1.5.1",
+    "next-with-apollo": "^5.1.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-moment": "^1.0.0",
+    "react-to-print": "^2.11.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "prettier": "^2.1.2"
   }
 }
